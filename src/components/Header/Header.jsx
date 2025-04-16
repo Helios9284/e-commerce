@@ -3,13 +3,31 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { GrSearch } from "react-icons/gr";
+import { useAuth } from "../../contexts/AuthProvider.js";
+import { CgHeart } from "react-icons/cg";
+import { CgShoppingCart } from "react-icons/cg";
+import { useUserData } from "../../contexts/UserDataProvider.js";
 import "./Header.css";
 const Header =()=>{
+    const {auth} = useAuth();
     const navigate = useNavigate();
+    const { userDataState } = useUserData();
     const [showHamburger, setShowHamburger] = useState(true);
     const getActiveStyle = ({ isActive }) => {
         return { color: isActive ? "white" : "" };
       };
+
+      const totalProductsInCart = userDataState.cartProducts?.reduce(
+        (acc, curr) => {
+          return acc + curr.qty;
+        },
+        0
+      );
+    const isProductInCart = () => (Number(totalProductsInCart) ? true : false);
+    const totalProductsInWishlist = userDataState.wishlistProducts.length;
+
+    const isProductInWishlist = () =>
+    Number(totalProductsInWishlist) ? true : false;
     return(
         <nav>
             <div className="nav-logo-home-button">
