@@ -1,0 +1,231 @@
+nav {
+    position: sticky;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    z-index: 3;
+  }
+  
+  .logo-image {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .nav-logo-home-button {
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  .nav-logo-home-button a {
+    outline: none;
+    border: none;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo-home-button a:hover {
+    color: white;
+  }
+  
+  a:active {
+    outline: none;
+    border: none;
+  }
+  a:focus {
+    outline: none;
+    border: none;
+  }
+  .hamburger-icon {
+    align-self: center;
+    cursor: pointer;
+    color: rgb(175, 175, 175);
+  }
+  
+  .hamburger-icon:hover {
+    color: white;
+  }
+  
+  .nav-link-container {
+    display: none;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .nav-link-container > * {
+    margin-right: 1.3em;
+    position: relative;
+  }
+  .nav-link-container > *:hover {
+    background-color: rgb(42, 42, 42);
+    border: 1px solid rgb(42, 42, 42);
+  }
+  
+  .nav-link-container-mobile {
+    padding: 1em;
+    padding-top: 70px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    top: 0px;
+    width: 100vw;
+    right: 0;
+    height: 80vh;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    align-items: stretch;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 46px -4px rgb(176, 175, 175);
+  }
+  .nav-link-container-mobile > * {
+    color: rgb(165, 165, 165);
+    margin-bottom: 10px;
+    border: 1px solid rgb(24, 24, 24);
+    margin-right: 0px;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(24, 24, 24);
+  }
+  
+  .cross-tab-icon {
+    position: relative;
+    top: 8px;
+    left: 2px;
+    cursor: pointer;
+  }
+  
+  ::placeholder {
+    letter-spacing: 0.4px;
+  }
+  
+  .cross-tab-icon {
+    z-index: 1;
+    color: red;
+  }
+  
+  .nav-input-search {
+    margin-top: 0.4em;
+    border: none;
+    background-color: white;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-input-search input {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+  }
+  
+  .nav-input-search button {
+    border: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    margin-top: 0.1em;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-count {
+    font-size: 0.7rem;
+    position: relative;
+    display: inline-block;
+    padding: 2.5px 6px;
+    border-radius: 30px;
+    left: -5px;
+    bottom: 15px;
+    background-color: rgb(250, 103, 103);
+    color: white;
+    border: none;
+  }
+  .cart,
+  .wishlist {
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }
+  .nav-logo-home-button .brand-name {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    nav a {
+      display: inline-block;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 400;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+    }
+    .nav-logo-home-button .brand-name {
+      display: inline;
+    }
+  
+    nav {
+      z-index: 3;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .hamburger-icon {
+      display: none;
+    }
+    .nav-link-container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+  
+    .nav-link-container > * {
+      color: rgb(176, 175, 175);
+    }
+    .nav-link-container > *:hover {
+      background-color: black;
+      cursor: pointer;
+      color: white;
+      border: none;
+    }
+  
+    .cart-count {
+      position: absolute;
+      display: block;
+      padding: 2.5px 6px;
+      border-radius: 30px;
+      left: 15px;
+      bottom: 20px;
+      background-color: rgb(253, 87, 87);
+      color: white;
+      border: none;
+      border: 1px solid var(--primary-color);
+    }
+  
+    .cart a {
+      color: white;
+    }
+  
+    .cart,
+    .wishlist {
+      position: default;
+      top: 0;
+      left: 0;
+      margin-top: 0.2em;
+    }
+    .wishlist {
+      margin-top: 0.2em;
+    }
+  }
+  
