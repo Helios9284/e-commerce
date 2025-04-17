@@ -1,0 +1,30 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 30px;
+}
+
+div .explore-btn {
+  text-align: center;
+  font-weight: 800;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5rem 2rem;
+}
+.no-items-container {
+  text-align: center;
+}
+
+.no-items-container button {
+  cursor: pointer;
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .cart-container {
+    flex-direction: row;
+  }
+}

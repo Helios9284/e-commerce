@@ -1,14 +1,18 @@
-import {Provider} from "react-redux"; 
-import { BrowserRouter as Router,Route,Routes,} from 'react-router-dom';
-// import store from './reducer/store';
 import './App.css';
-import  {Header}  from "./components/Header/Header";
+import {Header}  from "./components/Header/Header";
+import {Loader} from "./components/Loader/Loader";
+import { useData } from "./contexts/DataProvider.js";
+import { NavRoutes } from "./routes/NavRoutes";
 
 
 function App() {
+  const { loading } = useData();
+
   return (
     <div className="App">
       <Header />
+      {loading && <Loader />}
+      <NavRoutes />
     </div>
   );
 }
