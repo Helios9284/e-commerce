@@ -8,7 +8,7 @@ import { CgHeart } from "react-icons/cg";
 import { CgShoppingCart } from "react-icons/cg";
 import { useUserData } from "../../contexts/UserDataProvider.js";
 import "./Header.css";
-const Header =()=>{
+export const Header =()=>{
     const {auth} = useAuth();
     const navigate = useNavigate();
     const { userDataState } = useUserData();
@@ -59,45 +59,45 @@ const Header =()=>{
                 }
             >
                 <NavLink
-                onClick={() => setShowHamburger(true)}
-                style={getActiveStyle}
-                to="/product-listing"
-                >
-                Explore
+                    onClick={() => setShowHamburger(true)}
+                    style={getActiveStyle}
+                    to="/product-listing"
+                    >
+                    Explore
                 </NavLink>
                 <NavLink
-                onClick={() => setShowHamburger(true)}
-                style={getActiveStyle}
-                to={auth.isAuth ? "/profile" : "/login"}
-                >
-                {!auth.isAuth ? "Login" : "Profile"}
+                    onClick={() => setShowHamburger(true)}
+                    style={getActiveStyle}
+                    to={auth.isAuth ? "/profile" : "/login"}
+                    >
+                    {!auth.isAuth ? "Login" : "Profile"}
                 </NavLink>
                 <NavLink
-                onClick={() => setShowHamburger(true)}
-                style={getActiveStyle}
-                to="wishlist"
-                >
-                <span>{!showHamburger ? "Wishlist" : ""}</span>
-                <CgHeart size={25} className="wishlist" />{" "}
-                {isProductInWishlist() && (
-                    <span className="cart-count cart-count-mobile">
-                    {totalProductsInWishlist}
-                    </span>
-                )}
+                    onClick={() => setShowHamburger(true)}
+                    style={getActiveStyle}
+                    to="wishlist"
+                    >
+                    <span>{!showHamburger ? "Wishlist" : ""}</span>
+                    <CgHeart size={25} className="wishlist" />{" "}
+                    {isProductInWishlist() && (
+                        <span className="cart-count cart-count-mobile">
+                        {totalProductsInWishlist}
+                        </span>
+                    )}
                 </NavLink>
                 <NavLink
-                onClick={() => setShowHamburger(true)}
-                style={getActiveStyle}
-                to="/cart"
-                >
-                <span>{!showHamburger ? "Cart" : ""}</span>
-                {/* <CgShoppingCart size={25} className="cart" />{" "} */}
-                {/* {isProductInCart() && (
-                    <span className="cart-count cart-count-mobile">
-                    {" "}
-                    {totalProductsInCart}{" "}
-                    </span>
-                )} */}
+                    onClick={() => setShowHamburger(true)}
+                    style={getActiveStyle}
+                    to="/cart"
+                    >
+                    <span>{!showHamburger ? "Cart" : ""}</span>
+                    <CgShoppingCart size={25} className="cart" />{" "}
+                    {isProductInCart() && (
+                        <span className="cart-count cart-count-mobile">
+                        {" "}
+                        {totalProductsInCart}{" "}
+                        </span>
+                    )}
                 </NavLink>
             </div>
             {showHamburger && (
@@ -116,5 +116,3 @@ const Header =()=>{
         </nav>
     )
 }
-
-export default Header;

@@ -10,7 +10,7 @@ export const initialState = {
   },
 };
 
-const dataReducer = (state, action) => {
+export const dataReducer = (state, action) => {
   switch (action.type) {
     case "GET_ALL_PRODUCTS_FROM_API":
       return { ...state, allProductsFromApi: action.payload };
@@ -82,4 +82,3 @@ const dataReducer = (state, action) => {
   }
 };
 
-export default dataReducer;

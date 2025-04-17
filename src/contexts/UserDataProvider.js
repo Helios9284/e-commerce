@@ -17,7 +17,7 @@ import { getAddressListService } from "../services/address-services/getAddressLi
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 import { changeQuantityCartService } from "../services/cart-services/changeQuantityCartService";
-import { userDataReducer, initialUserData } from "../reducer/userDataReducer";
+import {userDataReducer, initialUserData} from "../reducer/userDataReducer.js";
 import { clearCartService } from "../services/cart-services/clearCartService";
 
 const UserDataContext = createContext();
