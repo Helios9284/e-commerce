@@ -12,7 +12,7 @@ export const initialUserData = {
   },
 };
 
-const userDataReducer = (state, action) => {
+export const userDataReducer = (state, action) => {
   switch (action.type) {
     case "SET_CART": {
       return { ...state, cartProducts: [...action.payload] };
@@ -45,6 +45,5 @@ const userDataReducer = (state, action) => {
   }
 };
 
-export default userDataReducer;
 
 
