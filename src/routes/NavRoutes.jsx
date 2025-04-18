@@ -3,6 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import { RequiresAuth } from "../components/requires-auth/RequiresAuth";
 import { Home } from "../pages/Home/Home";
 import { Cart } from "../pages/Cart/Cart";
+import { Login } from "../pages/auth/Login/Login";
+import { Signup } from "../pages/auth/Signup/Signup";
+import { Logout } from "../pages/auth/Logout/Logout";
 
 export const NavRoutes = () => {
     return(
@@ -14,6 +17,9 @@ export const NavRoutes = () => {
                 </RequiresAuth>
                 }
             />
+            <Route path="/login" element={<Login />} />
+            <Route path="/logout" element={<Logout />} />
+            <Route path="/signup" element={<Signup />} />
         </Routes>
     )
 }
