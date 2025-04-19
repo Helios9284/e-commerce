@@ -18,7 +18,15 @@ export const Login = () => {
   return (
     !loading && (
       <div className="login-container">
-        <h2>Login</h2>
+        <div className="login-header">
+          <img
+            src="./assets/icons/logo.png"
+            alt="AWU Logo"
+            className="logo-image"
+          />
+          <h2>Login</h2>
+        </div>
+
         <form
           onSubmit={(e) => loginHandler(e, email, password)}
           className="login-body"
@@ -83,7 +91,7 @@ export const Login = () => {
             <input value="Login" type="submit" />
             <button
               onClick={(e) => {
-                loginHandler(e, "aniketsaini65@gmail.com", "aniketSaini258");
+                loginHandler(e, "colonelme9284@gmail.com", "Helios9284");
               }}
             >
               Login with Test Credentials

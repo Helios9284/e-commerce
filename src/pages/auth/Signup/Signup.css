@@ -9,7 +9,13 @@
   border-radius: 10px;
   box-shadow: 0px 2px 33px 3px rgb(234, 234, 234);
 }
-
+.signup-header{
+  display: flex;
+  justify-content: center;
+}
+.signup-header .logo-image{
+  margin-left: -20%;
+}
 .signup-body {
   flex-grow: 1;
   display: flex;

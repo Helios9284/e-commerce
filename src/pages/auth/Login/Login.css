@@ -9,7 +9,15 @@
   border-radius: 10px;
   box-shadow: 0px 2px 33px 3px rgb(234, 234, 234);
 }
-
+.login-header{
+  padding:2px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.login-header .logo-image{
+  margin-left: -20%;
+}
 .login-container > h2 {
   text-align: center;
   margin-bottom: 10px;

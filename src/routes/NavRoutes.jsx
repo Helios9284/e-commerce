@@ -6,6 +6,7 @@ import { Cart } from "../pages/Cart/Cart";
 import { Login } from "../pages/auth/Login/Login";
 import { Signup } from "../pages/auth/Signup/Signup";
 import { Logout } from "../pages/auth/Logout/Logout";
+import { ProductListing } from "../pages/ProductListing/ProductListing";
 
 export const NavRoutes = () => {
     return(
@@ -20,6 +21,7 @@ export const NavRoutes = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/product-listing" element={<ProductListing />} />
         </Routes>
     )
 }

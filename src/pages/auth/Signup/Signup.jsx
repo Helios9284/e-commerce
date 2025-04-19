@@ -77,7 +77,14 @@ export const Signup = () => {
   return (
     !loading && (
       <div className="signup-container">
-        <h2>Sign Up</h2>
+        <div className="signup-header">
+          <img
+            src="./assets/icons/logo.png"
+            alt="AWU Logo"
+            className="logo-image"
+          />
+          <h2>Sign Up</h2>
+        </div>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -205,7 +212,7 @@ export const Signup = () => {
             <input value="Sign Up" type="submit" />
             <button
               onClick={(e) => {
-                loginHandler(e, "aniketsaini65@gmail.com", "aniketSaini258");
+                loginHandler(e, "colonelme9284@gmail.com", "Helios9284");
               }}
             >
               Login with Test Credentials
