@@ -1,46 +1,41 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-} */
-
-.App-link {
-  color: #61dafb;
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+button {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --primary-color: rgb(66, 66, 66);
+  --primary-color-onhover: black;
+
+  --secondary-background-color: rgb(232, 232, 232);
+  --secondary-background-color-onhover: rgb(214, 214, 214);
 }
