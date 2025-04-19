@@ -5,6 +5,7 @@ import "./CategoriesSection.css";
 
 export const CategoriesSection = () => {
   const { state, dispatch } = useData();
+  console.log("state", state);
   return (
     <div>
       <h1 className="categories-heading">Shop By Categories</h1>

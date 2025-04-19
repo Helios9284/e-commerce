@@ -7,6 +7,7 @@ import { Login } from "../pages/auth/Login/Login";
 import { Signup } from "../pages/auth/Signup/Signup";
 import { Logout } from "../pages/auth/Logout/Logout";
 import { ProductListing } from "../pages/ProductListing/ProductListing";
+import { Wishlist } from "../pages/Wishlist/Wishlist";
 
 export const NavRoutes = () => {
     return(
@@ -15,6 +16,14 @@ export const NavRoutes = () => {
             <Route path="/cart" element={ 
                 <RequiresAuth>
                      <Cart />
+                </RequiresAuth>
+                }
+            />
+            <Route
+                path="/wishlist"
+                element={
+                <RequiresAuth>
+                    <Wishlist />
                 </RequiresAuth>
                 }
             />
