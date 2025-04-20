@@ -8,7 +8,9 @@ import { DataProvider } from "./contexts/DataProvider.js";
 import { AuthProvider } from "./contexts/AuthProvider.js";
 import { UserProvider } from "./contexts/UserDataProvider.js";
 import { AddressProvider } from "./contexts/AddressProvider.js";
+import { makeServer } from "./server";
 
+makeServer();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
