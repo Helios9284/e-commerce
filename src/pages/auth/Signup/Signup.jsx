@@ -1,5 +1,5 @@
 import "./Signup.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsEyeSlash } from "react-icons/bs";
 import { BsEye } from "react-icons/bs";
 import { useState } from "react";
