@@ -2,7 +2,7 @@ export const categories = [
   {
     _id: "a",
     categoryName: "Abstract",
-    img: "../../../public/assets/images/category-images/Abstract_1.jpg",
+    img: "assets/images/category-images/Abstract_1.jpg",
   },
 
   {

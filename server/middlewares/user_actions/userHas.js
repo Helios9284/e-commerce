@@ -9,9 +9,7 @@ module.exports = async (product, user, type) => {
   let hasOnWishlist = null;
   let hasReviewed = null;
   if (user) {
-    //cart bahek aru ko lagi check gareko
     if (type !== "carts") {
-      //has on cart?
       hasOnCart = await Cart.findOne({
         user: user._id,
         product: product._id,
@@ -20,9 +18,8 @@ module.exports = async (product, user, type) => {
       if (!hasOnCart) hasOnCart = false;
     }
 
-    //wishlist bahek aru ko lagi check gareko
     if (type !== "wishlists") {
-      // has on wishlist?
+
       hasOnWishlist = await Whislist.findOne({
         user: user._id,
         product: product._id,
@@ -32,7 +29,7 @@ module.exports = async (product, user, type) => {
     }
 
     if (type === "product") {
-      //has bought?
+
       hasBought = await Order.findOne({
         user: user,
         $or: [
@@ -45,7 +42,6 @@ module.exports = async (product, user, type) => {
       });
       hasBought ? (hasBought = true) : (hasBought = false);
 
-      //has reviewed?
       hasReviewed = await Review.findOne({
         user: user,
         product: product._id,

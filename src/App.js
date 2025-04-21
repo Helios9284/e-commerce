@@ -5,6 +5,7 @@ import {Loader} from "./components/Loader/Loader";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 import { useData } from "./contexts/DataProvider.js";
 import { NavRoutes } from "./routes/NavRoutes";
+import {Footer} from "./components/Footer/Footer"
 
 
 
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       <Header />
       {loading && <Loader />}
-      <NavRoutes />
+      <NavRoutes />    
       <ScrollToTop />
       <Toaster
         position="top-right"
@@ -28,6 +29,7 @@ function App() {
           top: "6rem",
         }}
       />
+      {/* <Footer /> */}
     </div>
   );
 }

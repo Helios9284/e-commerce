@@ -1,7 +1,7 @@
 .categories-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  gap: 20px; 
   width: 100%;
   margin: 10rem auto 5rem auto;
 }
@@ -96,8 +96,8 @@
   .categories-container {
     grid-template-columns: repeat(2, 1fr);
     width: 95vw;
-    height: 600px;
     justify-content: space-between;
+    height: 100%;
   }
 
   .categories-heading {
@@ -120,7 +120,6 @@
     height: 100%;
     opacity: 0.5;
     border-radius: 20px;
-    height: 100%;
   }
 
   .category-card h3 {
