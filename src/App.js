@@ -29,7 +29,7 @@ function App() {
           top: "6rem",
         }}
       />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

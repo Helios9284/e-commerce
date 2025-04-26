@@ -134,6 +134,7 @@
     width: 95vw;
     height: 600px;
     justify-content: space-between;
+    height: 100%;
   }
 
   .categories-heading {
