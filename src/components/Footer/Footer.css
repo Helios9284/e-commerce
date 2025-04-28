@@ -1,0 +1,17 @@
+.footer {
+  color: white;
+  text-align: center;
+  display: block;
+  background-color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.8rem;
+  justify-content: space-between;
+}
+.footer > * {
+  margin: 0.5rem;
+}
+.footer > :first-child {
+  opacity: 0.5;
+}
+

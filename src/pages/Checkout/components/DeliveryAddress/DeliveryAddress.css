@@ -1,0 +1,40 @@
+.delivery-address-container {
+  border-top: 1px solid rgb(231, 231, 231);
+  padding: 15px;
+  margin: 15px;
+}
+
+.delivery-address-description {
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+.delivery-address-description .name {
+  margin-bottom: 15px;
+}
+
+.delivery-address-description .address {
+  margin-bottom: 10px;
+}
+
+.delivery-address-container p {
+  color: grey;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+.place-order-btn {
+  border: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 12px 36px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+
+.place-order-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}

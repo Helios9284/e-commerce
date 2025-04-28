@@ -1,0 +1,15 @@
+.checkout-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.page-heading {
+  text-align: center;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .checkout-container {
+    flex-flow: row nowrap;
+  }
+}

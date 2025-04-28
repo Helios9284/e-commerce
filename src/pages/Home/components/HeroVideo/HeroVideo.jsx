@@ -23,8 +23,8 @@ export const HeroVideo = () => {
 
       <div className="hero-text">
         <h1 className="gradient-text">CELEBRATE CREATIVITY</h1>
-        <div class="typing-container">
-          <span class="typing-text">Where Pixels Become Masterpieces!</span>
+        <div className="typing-container">
+          <span className="typing-text">Where Pixels Become Masterpieces!</span>
         </div>
         {/* <h2>Where Pixels Become Masterpieces!</h2> */}
       </div>
